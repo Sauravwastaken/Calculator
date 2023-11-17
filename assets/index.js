@@ -50,15 +50,6 @@ Array.from(buttons).forEach((element) => {
           string = string + btn_value;
           userInput.value = eval(string);
           string = eval(string);
-
-          // If evaluate is pressed twice, clear the string
-          if (clear == true) {
-            userInput.value = "";
-            string = "";
-            clear = false;
-          } else {
-            clear = true;
-          }
         }
 
         // Delete
